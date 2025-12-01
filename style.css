@@ -1,0 +1,40 @@
+.stu{
+    height: 620px;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+}
+.photo{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.order{
+   padding-left: 10px;
+
+}
+.skil{
+    padding-left: 50px;
+}
+.footer{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+}
+button{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 70px;
+}
+/* .high{
+    padding-left: 20px;
+    background-color: burlywood;
+    height: 30px;
+    width: 70px;
+} */
