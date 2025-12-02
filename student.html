@@ -5,16 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="stu">
-<div class="photo">
-    <img src="card6.JPG" alt="">
-   
-
+     <!-- <div class="stu">
+        <div id="popup">
+        <h1>student dashboard: </h1>
+        <br></br>
+        <h5>student name</h5><input type="text"placeholder="enter name">
+        <br></br>
+        <h5>student course</h5><input type="text"placeholder="enter course">
+         <br></br>
+        <li class="nav-item dropdown">
+          <h5><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          student akills</h5><input type="text" name="" id="">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">java</a></li>
+            <li><a class="dropdown-item" href="#">python</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">php</a></li>
+          </ul>
+        </li>
+        <br></br>
+        <center><button id="showProfileBtn">show profile</button></center>
+        </div>
 </div>
- <div class="high"><center><h2>student name</h2></center>
+ <div id="popupBackground">
+        <div id="popupBox">
+            <h3>Student Profile</h3>
+
+            <p><strong>Name:</strong> <span id="pName"></span></p>
+            <p><strong>Roll No:</strong> <span id="pRoll"></span></p>
+            <p><strong>Department:</strong> <span id="pDept"></span></p>
+            <p><strong>Email:</strong> <span id="pEmail"></span></p>
+
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Popup Background */
+        #popupBackground {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        /* Popup Box */
+        #popupBox {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 120px auto;
+        }
+
+        #closeBtn {
+            background: red;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="stu">
+    <div id="popup">
+        <h1>Student Dashboard</h1>
+
+        <h5>Student Name</h5>
+        <input type="text" id="name" placeholder="enter name">
+
+        <h5>Student Course</h5>
+        <input type="text" id="course" placeholder="enter course">
+
+        <h5>Student Skills</h5>
+        <input type="text" id="skills" placeholder="enter skills">
+
+        <br><br>
+        <center>
+            <button id="showProfileBtn" class="btn btn-primary">Show Profile</button>
+        </center>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div id="popupBackground">
+    <div id="popupBox">
+        <h3>Student Profile</h3>
+
+        <p><strong>Name:</strong> <span id="pName"></span></p>
+        <p><strong>Course:</strong> <span id="pCourse"></span></p>
+        <p><strong>Skills:</strong> <span id="pSkills"></span></p>
+
+        <button id="closeBtn">Close</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+ <!--<div class="high"><center><h2>student name</h2></center>
 <ul>
 <li id="pname"><h2>sreekanth</h2></li>
 </ul>
@@ -41,10 +154,10 @@
            <li><h2>react</h2></li>
             <li><h2>node</h2></li>
     </ol>
-<button id="showProfileBtn">profile</button>
-</div>
+<button id="showProfileBtn">profile</button> -->
 
-    </div>
+
     
+    <script></script>
 </body>
 </html>
